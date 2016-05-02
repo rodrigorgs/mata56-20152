@@ -19,7 +19,7 @@ Apresentações:
 - 16/05
     + Ruby: Adeilson, Jefferson, Mateus
     + Swift: Laisson Laique, Luara Mineiro
-    + C#: José Roberto, Rodrigo
+    + C#: José Roberto, Rodrigo, Uálex
 - 18/05
     + Shell: Jailton, Tiago Gonçalves, Samuel
     + Elixir: Cristiano, Alesson, Felipe Rabello
