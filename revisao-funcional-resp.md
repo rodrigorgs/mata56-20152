@@ -184,3 +184,29 @@ teste(1, maximo([-3, 2, 1]));
 teste(3, maximo([3, 2, 1]));
 teste(3, maximo([1, 2, 3]));
 ```
+
+## Questão extra (primeira apostila)
+
+```javascript
+var boxarts = [
+        { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+        { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+        { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+        { width: 425, height:150, url:"http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" }
+    ];
+
+var urlDaMaiorBoxart = R.pipe(
+    R.map(art => ({area: art.width * art.height, url: art.url})),
+    R.reduce(
+        (maior, atual) => atual.area > maior.area ? atual : maior,
+        {area: 0, url: ""}),
+    (obj) => obj.url)
+
+console.log(urlDaMaiorBoxart(boxarts));
+```
+
+
+
+
+
+
